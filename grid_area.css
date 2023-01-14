@@ -39,11 +39,11 @@
     display: grid;
     gap: 15px;
     grid-template-columns: 1fr 4fr 1fr;
-    /*kindly explain*/
+   
     grid-template-areas:
 
         "header header  header header"
-        /*kindly explain*/
+        
         "nav    main    main    aside"
         "nav    main    main       ad"
         "footer footer  footer  footer"
@@ -51,17 +51,16 @@
     ;
 }
 
-/* Types of devices for responsive are */
+/* Types of devices for responsive */
 
 /* small device */
 @media only screen and (max-width:576px) {
     .grid-container {
 
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /*very important line*/
         grid-template-areas:
 
             "header"
-            /*kindly explain*/
             "nav"
             "main"
             "aside"
@@ -70,13 +69,14 @@
 
         ;
     }
+           
 }
 
 /* medium device */
 @media only screen and (min-width:577px) and (max-width:992px) {
     .grid-container {
 
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr; /*very important line*/
         grid-template-areas:
 
             "header header header"
@@ -95,7 +95,7 @@
 @media only screen and (min-width:993px) and (max-width:1199px) {
     .grid-container {
 
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr; /*very important line*/
         grid-template-areas:
 
             "header header header header"
@@ -107,7 +107,7 @@
     }
 }
 
-
+/*life easier link*/
 /* https://grid.layoutit.com/ */
 /* https://www.smashingmagazine.com/understanding-css-grid-template-areas/ */
 
